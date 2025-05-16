@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "d9bd5e4c-a6bc-403e-9a3b-d113546b1235",
+		"name": "DWES06",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40395649"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pokemon1\": { \"id\": 546 },\r\n  \"pokemon2\": { \"id\": 934 },\r\n  \"pokemon3\": { \"id\": 875 },\r\n  \"pokemon4\": { \"id\": 658 },\r\n  \"pokemon5\": { \"id\": 1100 },\r\n  \"pokemon6\": { \"id\": 56 }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/equipos/post"
+			},
+			"response": []
+		},
+		{
+			"name": "get equipos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/equipos"
+			},
+			"response": []
+		},
+		{
+			"name": "get equipo id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/equipos/3"
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemon",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/pokemon"
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemon id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/pokemon/90"
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemon tipo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/pokemon/tipo/Fantasma"
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemon gen",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/pokemon/gen/9"
+			},
+			"response": []
+		},
+		{
+			"name": "put equipos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pokemon1\": { \"id\": 547 },\r\n  \"pokemon2\": { \"id\": 934 },\r\n  \"pokemon3\": { \"id\": 875 },\r\n  \"pokemon4\": { \"id\": 658 },\r\n  \"pokemon5\": { \"id\": 1100 },\r\n  \"pokemon6\": { \"id\": 59 }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/equipos/put/7"
+			},
+			"response": []
+		},
+		{
+			"name": "delete equipos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/equipos/delete/7"
+			},
+			"response": []
+		}
+	]
+}
